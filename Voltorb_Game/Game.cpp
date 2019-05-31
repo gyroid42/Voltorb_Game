@@ -391,6 +391,11 @@ void Game::GameOver() {
 
 	RevealBoard();
 
+	if (currentLevel < 1) {
+
+		currentLevel = 1;
+	}
+
 	if (totalTilesRevealed <= currentLevel) {
 
 		currentLevel = totalTilesRevealed;
